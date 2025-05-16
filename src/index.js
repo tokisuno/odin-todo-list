@@ -1,11 +1,13 @@
-import "./styles.css";
-import shakeImage from "./shake.jpeg";
+import './styles.css';
 
-import { greeting } from "./greeting.js";
+// placeholder todo class
+function TodoItem (title, desc, dueDate, priority) {
+  this.title = title;
+  this.desc = desc;
+  this.dueDate = dueDate;
+  this.priority = priority;
+}
 
-const image = document.createElement("img");
-image.src = shakeImage;
-
-document.body.appendChild(image);
-
-console.log(greeting);
+function TodoLists (...list) {
+  this.list = [...list]
+}

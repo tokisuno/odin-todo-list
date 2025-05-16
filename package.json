@@ -100,5 +100,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokisuno/odin-todo-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tokisuno/odin-todo-list/issues"
+  },
+  "homepage": "https://github.com/tokisuno/odin-todo-list#readme",
   "description": ""
 }
