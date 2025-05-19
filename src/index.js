@@ -1,14 +1,13 @@
 import './styles.css';
 
 // placeholder todo class
-function TodoItem (title: string, desc: string, dueDate: string, priority: string) {
+function TodoItem (title, desc, dueDate, priority) {
   this.title = title;
   this.desc = desc;
   this.dueDate = dueDate;
   this.priority = priority;
 }
 
-// idk what type this has to be yet
-function TodoLists (...list: any) {
+function TodoLists (...list) {
   this.list = [...list]
 }
