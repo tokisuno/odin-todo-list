@@ -1,4 +1,9 @@
 # TODO Project (redo)
+## Thinking outloud
+### Main list that is initialized on startup
+- I only want defined behaviour, meaning that I don't want these constructures to take any params.
+- I only want them to add items when I want them to, and remove them when I want them to.
+
 ## Guidelines
 1. 'Todos' are objects that are created dynamically, which means either using either factories or constructors/classes to generate.
 2. The class contains the following:
