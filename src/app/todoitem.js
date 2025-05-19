@@ -6,10 +6,11 @@ export class TodoItem  {
     this.desc = desc;
     this.dueDate = dueDate;
     this.priority = priority;
-    this.id = `todo_${format(new Date(), "yyyyMMddHHmmss")}`
+
+    // this.id = format(new Date(), "yyyyMMddHHmmss");
+    this.id = `${Math.floor(Math.random() * 999)}`; // for testing
   }
 
-  // ensuring that input turns into a string, even when testing through console
   changeTitle (newTitle) {
     this.title = `${newTitle}`;
   }
