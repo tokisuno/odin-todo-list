@@ -1,6 +1,8 @@
 export class List {
-  constructor() {
-    this.items = []
+  constructor(name = 'default') {
+    this.items = [];
+    this.name = name;
+    this.expanded = false;
   }
 
   addItem (item) {

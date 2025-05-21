@@ -1,13 +1,15 @@
 import './styles.css';
 
-// Main list that is initialized on startup
-// - I only want defined behaviour, meaning that I don't want these constructures to take any params.
-// - I only want them to add items when I want them to, and remove them when I want them to.
-
+//          ╭─────────────────────────────────────────────────────────╮
+//          │                         Classes                         │
+//          ╰─────────────────────────────────────────────────────────╯
 import { App } from './app/app.js';
 import { List } from './app/list.js';
 import { TodoItem } from './app/todoitem.js';
-
+//          ╭─────────────────────────────────────────────────────────╮
+//          │                           DOM                           │
+//          ╰─────────────────────────────────────────────────────────╯
+import { drawTitle, drawTodoList, drawLists, drawTodoItem } from './dom/draw.js';
 //          ╭─────────────────────────────────────────────────────────╮
 //          │                 Temporary Testing Field                 │
 //          ╰─────────────────────────────────────────────────────────╯
@@ -40,8 +42,8 @@ defaultList.addItem(testItem3);
 const app = new App();
 app.addList(defaultList);
 
-console.log(app.lists[0].items);
-app.lists[0].removeItem(0);
-//          ╭─────────────────────────────────────────────────────────╮
-//          │                 Temporary Testing Field                 │
-//          ╰─────────────────────────────────────────────────────────╯
+// console.log(app.lists[0].items);
+// app.lists[0].removeItem(0);
+drawTitle();
+// drawTodoList(app.lists);
+drawLists(app);

@@ -8,7 +8,7 @@ export class TodoItem  {
     this.priority = priority;
 
     // this.id = format(new Date(), "yyyyMMddHHmmss");
-    this.id = `${Math.floor(Math.random() * 999)}`; // for testing
+    // this.id = `${Math.floor(Math.random() * 999)}`; // for testing
   }
 
   changeTitle (newTitle) {

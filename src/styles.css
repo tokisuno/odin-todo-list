@@ -1,3 +1,45 @@
-body {
-  background-color: rebeccapurple;
+/* !! MODIFIED JOSHWCOMEAU CSS MODERN RESET !! */
+* {
+  margin: 0;
 }
+
+body {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+* {
+  font-family: Serif;
+  font-size: 1.1em;
+}
+/* !! MODIFIED JOSHWCOMEAU CSS MODERN RESET !! */
+
+body {
+  background-color: #eff1f5;
+  color: #4c4f69;
+}
+
+#default {
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  gap: 1.5em;
+}
+
