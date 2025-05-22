@@ -36,10 +36,22 @@ body {
   color: #4c4f69;
 }
 
-#default {
+#lists {
   display: flex;
-  justify-content: center;
-  line-height: 1.5;
-  gap: 1.5em;
+  justify-content: space-evenly;
+  background: grey;
 }
 
+.list {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  line-height: 1.5;
+  gap: 1.5em;
+  background: limegreen;
+  text-align: center;
+}
+
+.item {
+  background: blanchedalmond;
+}

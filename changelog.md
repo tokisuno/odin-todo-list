@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025.05.22
+### Added
+- User is now able to expand a `List` drawn to DOM, with the option to close it (TBA)
+- `TodoItem` now comes with a remove button to remove item from list
+- Added CSS to show relationshop between divs easier, along with how they're drawn
+
 ## 2025.05.21
 ### Added
 - `TodoItem` can be displayed to the DOM, along with `List` and `App`!

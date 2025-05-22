@@ -1,37 +1,33 @@
-import './styles.css';
+import "./styles.css";
 
-//          ╭─────────────────────────────────────────────────────────╮
-//          │                         Classes                         │
-//          ╰─────────────────────────────────────────────────────────╯
-import { App } from './app/app.js';
-import { List } from './app/list.js';
-import { TodoItem } from './app/todoitem.js';
-//          ╭─────────────────────────────────────────────────────────╮
-//          │                           DOM                           │
-//          ╰─────────────────────────────────────────────────────────╯
-import { drawTitle, drawTodoList, drawLists, drawTodoItem } from './dom/draw.js';
-//          ╭─────────────────────────────────────────────────────────╮
-//          │                 Temporary Testing Field                 │
-//          ╰─────────────────────────────────────────────────────────╯
+// Classes
+import { App } from "./app/app.js";
+import { List } from "./app/list.js";
+import { TodoItem } from "./app/todoitem.js";
+
+// DOM
+import {
+  drawTitle,
+  expandTodoList,
+  drawLists,
+  drawTodoItem,
+} from "./dom/draw.js";
+
+// Temporary Testing Field
 const testItem1 = new TodoItem(
   "take out the trash",
   "go and take out the trash",
   "2025-07-14",
-  "3"
+  "3",
 );
 
-const testItem2 = new TodoItem(
-  "shower",
-  "go and get clean",
-  "2026-01-23",
-  "1"
-);
+const testItem2 = new TodoItem("shower", "go and get clean", "2026-01-23", "1");
 
 const testItem3 = new TodoItem(
   "gaming",
   "go and play video games",
   "2025-05-30",
-  "2"
+  "2",
 );
 
 const defaultList = new List();
