@@ -49,35 +49,3 @@ function closeTodoList(list) {
 
 }
 
-function drawTodoItem(item, count) {
-  const listItem = document.createElement("div");
-  listItem.setAttribute("id", `${count}`);
-
-  const title = document.createElement("div");
-  title.textContent = item.title;
-
-  const desc = document.createElement("div");
-  desc.textContent = item.desc;
-
-  const dueDate = document.createElement("div");
-  dueDate.textContent = item.dueDate;
-
-  const priority = document.createElement("div");
-  priority.textContent = item.priority;
-
-  const removeBtn = document.createElement("button");
-  removeBtn.textContent = "Remove item";
-  removeBtn.addEventListener("click", () => {
-    console.log('remove this item from the todo list');
-  })
-
-  listItem.setAttribute("class", "item");
-
-  listItem.appendChild(title);
-  listItem.appendChild(desc);
-  listItem.appendChild(dueDate);
-  listItem.appendChild(priority);
-  listItem.appendChild(removeBtn);
-
-  return listItem;
-}
