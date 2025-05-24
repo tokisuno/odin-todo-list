@@ -1,17 +1,17 @@
 import "./styles.css";
 
 // Classes
-import { App } from "./app/app.js";
-import { List } from "./app/list.js";
-import { TodoItem } from "./app/todoitem.js";
+import { App } from "./modules/app.js"
+import { List } from "./modules/list.js";
+import { TodoItem } from "./modules/todoitem.js";
 
 // DOM
 import {
   drawTitle,
-  expandTodoList,
+  // expandTodoList,
   drawLists,
-  drawTodoItem,
-} from "./dom/draw.js";
+  // drawTodoItem,
+} from "./modules/draw.js";
 
 // Temporary Testing Field
 const testItem1 = new TodoItem(

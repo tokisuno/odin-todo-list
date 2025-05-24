@@ -1,3 +1,5 @@
+import { saveData, accessData } from './storage.js';
+
 export function drawTitle() {
   const title = document.createElement("h1");
   title.textContent =
@@ -21,11 +23,13 @@ export function drawLists(app) {
 
     expandBtn.addEventListener("click", (e) => {
       if (list.expanded === false) {
-        expandTodoList(list);
-        list.expanded = !list.expanded;
-      } else {
-        console.log(list.expanded);
+        list.expandList();
       }
+      // if (list.expanded === false) {
+      //   expandTodoList(list);
+      //   list.expanded = !list.expanded;
+      // }
+      // console.log(list.expanded);
     });
 
     listItem.appendChild(listName);
@@ -35,29 +39,17 @@ export function drawLists(app) {
   document.body.appendChild(listDiv);
 }
 
-export function expandTodoList(list) {
+function expandTodoList(list) {
   console.log(list);
-  const todoList = document.querySelector(`div#${list.name}`);
-  todoList.innerHTML = "";
-
-  let count = 0;
-
-  list.items.forEach((item) => {
-    const listItem = drawTodoItem(item, count++);
-    todoList.appendChild(listItem);
-  });
-
-  const closeBtn = document.createElement("button");
-  closeBtn.textContent = "Close list";
-  closeBtn.addEventListener("click", () => {
-    console.log("close this div, show list of all lists again");
-  });
-  todoList.appendChild(closeBtn);
-
-  document.querySelector("div#lists").appendChild(todoList);
 }
 
-export function drawTodoItem(item, count) {
+function closeTodoList(list) {
+  console.log(list)
+  list.innerHTML = '';
+
+}
+
+function drawTodoItem(item, count) {
   const listItem = document.createElement("div");
   listItem.setAttribute("id", `${count}`);
 
